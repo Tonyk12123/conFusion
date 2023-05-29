@@ -2,22 +2,29 @@
 <html lang="en">
 
 <head>
+    <!-- Required meta tags always come first -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link href="css/styles.css" rel="stylesheet">
     <title>Document</title>
+
+    <!-- Bootstrap CSS -->
+
 </head>
 
 <body>
+    <!-- navbar-dark class to specify that the page should use the dark navigation bar -->
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
-            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a>
+            <!-- This is the brand name for the website. -->
+            <a class="navbar-brand mr-auto" href="./index.html"><img src="img/logo.png" height="30" width="41"></a>
+            <!-- be collapsed on small and xs screens, but can be toggled on or off when the toggle button is clicked -->
             <div class="collapse navbar-collapse" id="Navbar">
+                <!-- navbar-nav class to specify that the items should be displayed inline inside the navigation bar -->
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span>
                             Home</a></li>
@@ -31,36 +38,44 @@
                 </ul>
             </div>
         </div>
+        <!--the menu items are collapsed on small and xs screens when the toggle button is visible -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
             <span class="navbar-toggler-icon"></span>
         </button>
     </nav>
+    <!-- <ol class="col-12 breadcrumb">
+        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+        <li class="breadcrumb-item active">About Us</li>
+    </ol> -->
 
+    <!-- A jumbotron is used to showcase key content on a website -->
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-6"> 1 </div>
-                <div class="col-12 col-sm align-self-center">
-                    <img src="img/logo.png" class="img-fluid">
-                </div>
-
+                <div class="col-12 col-sm-6">...</div>
+                <div class="col-12 col-sm">...</div>
             </div>
         </div>
     </header>
-    <section>
+
+    <section class="content">
         <div class="container">
-            <div>
+            <div class="row">
+                <!-- Breadcrumb -->
                 <ol class="col-12 breadcrumb">
                     <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
                     <li class="breadcrumb-item active">About Us</li>
                 </ol>
+                <div class="col-12">
+                    <h3>About Us</h3>
+                    <hr>
+                </div>
             </div>
+            <!-- Table -->
             <div class="row row-content">
-                <!-- <div class="col-12 col-sm-4 order-sm-last col-md-3">
-                    <div class="row row-content align-items-center"> -->
-
                 <div class="col-12 col-sm-6">
                     <h2>Facts &amp; Figures</h2>
+                    <!-- table-responsive class to create a responsive table, and the table-striped and thead-inverse classes for styling the table -->
                     <div class="table-responsive">
                         <table class="table table-striped">
                             <thead class="thead-dark">
@@ -99,10 +114,7 @@
                             </tbody>
                         </table>
                     </div>
-
                 </div>
-
-
                 <div class="col-12 col-sm-6">
                     <div class="card">
                         <h3 class="card-header bg-primary text-white">Facts At a Glance</h3>
@@ -120,9 +132,9 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-12">
                     <div class="card card-body bg-light">
+                        <!-- the <blockquote> tag to create a block quote in the card. We can use a <footer> inside the block quote to specify the attribution of the quote to its origin. -->
                         <blockquote class="blockquote">
                             <p class="mb-0">You better cut the pizza in four pieces because
                                 I'm not hungry enough to eat six.</p>
@@ -133,90 +145,139 @@
                         </blockquote>
                     </div>
                 </div>
-
-
-                <!-- </div>
-                </div> -->
-                <!-- <div class="col col-sm order-sm-first col-md">
-                    <div class="row row-content align-items-center"> 1 </div>
-                    <div class="row row-content align-items-center"> 2 </div>
-                    <div class="row row-content align-items-center"> 3 </div>
-                </div> -->
             </div>
+            <!-- <div class="row row-content">
+                <div class="col-12"> -->
+                    <!-- the use of the <ul> tag with the nav and nav-tabs classes to set up the tab navigation -->
+                    <!-- <ul class="nav nav-tabs">
+                        <li class="nav-item"> -->
+                            <!-- The first list element's <a> tag contains the class active. This tab will be the open tab when we view the web page. We can switch to the other tabs using the tabbed navigation that we just set up. -->
+                            <!-- <a class="nav-link active" href="#peter" role="tab" data-toggle="tab">Peter Pan, CEO</a>
+                        </li>
+                        <li class="nav-item"> -->
+                            <!-- the <a> tags with the href pointing to the id of the tab pane of content to be introduced later. Also note that the <a> tag contains the data-toggle=tab attribute.  -->
+                            <!-- <a class="nav-link" href="#danny" role="tab" data-toggle="tab">Danny Witherspoon, CFO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#agumbe" role="tab" data-toggle="tab">Agumbe Tang, CTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#alberto" role="tab" data-toggle="tab">Alberto Somayya, Exec.
+                                Chef</a>
+                        </li>
+                    </ul> -->
+                    <!-- Tab content -->
+                    <!-- <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade show active" id="peter">
+                            <h3>Peter Pan <small>Chief Epicurious Officer</small></h3>
+                            <p> ... </p>
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane fade" id="danny">
+                            <h3>Danny Witherspoon <small>Chief Financial Officer</small></h3>
+                            <p> ... </p>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="agumbe">
+                            <h3>Agumbe Tang <small>Chief Technical Officer</small></h3>
+                            <p> ... </p>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="alberto">
+                            <h3>Alberto Somayya <small>Executive Chef</small></h3>
+                            <p> ... </p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
             <div class="row row-content">
-                <div class="col-12">
-                    <div id="accordion">
-                        <div class="card">
-                            <div class="card-header" role="tab" id="peterhead">
-                                <h3 class="mb-0">
-                                    <a data-toggle="collapse" data-target="#peter">
-                                        Peter Pan <small>Chief Epicurious Officer</small>
-                                    </a>
-                                </h3>
-                            </div>
-                            <div class="collapse show" id="peter" data-parent="#accordion">
-                                <div class="card-body">
-                                    <p class="d-none d-sm-block">. . .</p>
-                                </div>
+                <!-- Accordion -->
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" role="tab" id="peterhead">
+                            <h3 class="mb-0">
+                                <a data-toggle="collapse" data-target="#peter">
+                                    Peter Pan <small>Chief Epicurious Officer</small>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="collapse show" id="peter" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">. . .</p>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-header" role="tab" id="dannyhead">
-                                <h3 class="mb-0">
-                                    <a class="collapsed" data-toggle="collapse" data-target="#danny">
-                                        Dhanasekaran Witherspoon <small>Chief Food Officer</small>
-                                    </a>
-                                </h3>
-                            </div>
-                            <div class="collapse" id="danny" data-parent="#accordion">
-                                <div class="card-body">
-                                    <p class="d-none d-sm-block">. . .</em></p>
-                                </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-header" role="tab" id="dannyhead">
+                            <h3 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" data-target="#danny">
+                                    Dhanasekaran Witherspoon <small>Chief Food Officer</small>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="collapse" id="danny" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">. . .</em></p>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-header" role="tab" id="agumbehead">
-                                <h3 class="mb-0">
-                                    <a class="collapsed" data-toggle="collapse" data-target="#agumbe">
-                                        Agumbe Tang <small>Chief Taste Officer</small>
-                                    </a>
-                                </h3>
-                            </div>
-                            <div class="collapse" id="agumbe" data-parent="#accordion">
-                                <div class="card-body">
-                                    <p class="d-none d-sm-block">. . .</p>
-                                </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="agumbehead">
+                            <h3 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" data-target="#agumbe">
+                                    Agumbe Tang <small>Chief Taste Officer</small>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="collapse" id="agumbe" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">. . .</p>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-header" role="tab" id="albertohead">
-                                <h3 class="mb-0">
-                                    <a class="collapsed" data-toggle="collapse" data-target="#alberto">
-                                        Alberto Somayya <small>Executive Chef</small>
-                                    </a>
-                                </h3>
-                            </div>
-                            <div class="collapse" id="alberto" data-parent="#accordion">
-                                <div class="card-body">
-                                    <p class="d-none d-sm-block">. . .</em></p>
-                                </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="albertohead">
+                            <h3 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" data-target="#alberto">
+                                    Alberto Somayya <small>Executive Chef</small>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="collapse" id="alberto" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">. . .</em></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- --------------------------------------------------------- -->
+            <!-- <div class="row row-content align-items-center">
+                <div class="col-12 col-sm-4 order-sm-last col-md-3"> ... </div>
+                <div class="col col-sm order-sm-first col-md">... </div>
+            </div>
+            <div class="row row-content align-items-center">
+                <div class="col-12 col-sm-4 col-md-3">...</div>
+                <div class="col col-sm col-md"> ... </div>
+            </div>
+            <div class="row row-content align-items-center">
+                <div class="col-12 col-sm-4 order-sm-last col-md-3"> ... </div>
+                <div class="col col-sm order-sm-first col-md">... </div>
+            </div> -->
         </div>
     </section>
+
     <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
+                    <!-- the unordered list style list-unstyled to display the links at the bottom of the page without the bullets -->
                     <ul class="list-unstyled">
                         <li><a href="./index.html">Home</a></li>
-                        <li><a href="./aboutus.html">About</a></li>
+                        <li><a href="#">About</a></li>
                         <li><a href="#">Menu</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="./contactus.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-7 col-sm-5">
@@ -253,38 +314,38 @@
                 </div>
             </div>
         </div>
-    </footer>
-    <!-- <footer class="footer">
-        <div class="container">
+        <!-- <div class="container">
             <div class="row justify-content-center">
-                <div class="col-4 offset-1 col-sm-2"> 1 </div>
+                <div class="col-4 offdet-1 col-sm-2"> -->
+        <!-- the unordered list style list-unstyled to display the links at the bottom of the page without the bullets -->
+        <!-- <ul class="list-unstyled"> ... </ul>
+                </div>
                 <div class="col-7 col-sm-5">
                     <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
                     <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
                     <i class="fa fa-envelope fa-lg"></i>:
                     <a href="mailto:confusion@food.net">confusion@food.net</a>
                 </div>
-                <div class="col-12 col-sm-4 align-self-center">
-                    <ul class="list-unstyled">
-                        <div class="text-center">
-                            <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i
-                                    class="fa fa-google-plus"></i></a>
-                            <a class="btn btn-social-icon btn-facebook"
-                                href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
-                            <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i
-                                    class="fa fa-linkedin"></i></a>
-                            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
-                                    class="fa fa-twitter"></i></a>
-                            <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
-                                    class="fa fa-youtube"></i></a>
-                            <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
-                        </div>
-                    </ul>
+                <div class="col-12 col-sm-4 align-self-center text-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i
+                                class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i
+                                class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i
+                                class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                                class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                                class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                    </div>
                 </div>
-                <div class="col-auto"> 4 </div>
+                <div class="col-auto"> ... </div>
             </div>
-        </div>
-    </footer> -->
+        </div> -->
+    </footer>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>

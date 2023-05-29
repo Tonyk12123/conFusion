@@ -1,21 +1,13 @@
 {
   "name": "confusion",
   "version": "1.0.0",
-  "description": "This is example about conFusion",
+  "description": "1st",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Tonyk12123/conFusion.git"
-  },
-  "author": "Tonyk12123",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Tonyk12123/conFusion/issues"
-  },
-  "homepage": "https://github.com/Tonyk12123/conFusion#readme",
   "devDependencies": {
     "lite-server": "^2.6.1"
   },
